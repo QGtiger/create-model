@@ -3,7 +3,8 @@ import { createContext, useContext } from "react";
 export function createCustomModel<
   F extends (props: any) => any,
   T = ReturnType<F>,
-  ProviderProps = React.PropsWithChildren<{ value?: Parameters<F>[0] }>,
+  P = Parameters<F>[0],
+  ProviderProps = P extends undefined ? { children: React.ReactNode } : { children: React.ReactNode; value: P },
 >(useHook: F) {
   const Context = createContext<T | undefined>(undefined);
 

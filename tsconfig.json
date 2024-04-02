@@ -9,6 +9,9 @@
     /* Type Checking */
     "strict": true /* Enable all strict type-checking options. */,
     "skipLibCheck": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "@lightfish/create-model": ["./src/index.tsx"]
+    }
   }
 }

@@ -1,14 +1,19 @@
 {
   "name": "@lightfish/create-model",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple data state management",
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.mts",
   "scripts": {
     "build": "tsup"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "createContext",
+    "context",
+    "model",
+    "data state management"
+  ],
+  "author": "lightfish",
   "license": "ISC",
   "devDependencies": {
     "@types/react": "^18.2.73",
